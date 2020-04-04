@@ -26,7 +26,7 @@ public class LightsOutView extends JFrame implements ActionListener
     public final static Color P1_COLOR = Color.yellow;
     public final static Color P2_COLOR = Color.black;
     public final static Color TIE_COLOR = Color.black;
-    public final static Color BOARD_COLOR = Color.blue;
+    public final static Color BOARD_COLOR = Color.darkGray;
     public final static int BORDER = 5;
     public final static int FONT_SIZE = 13;
     private JButton playerMoves = new JButton("Player Moves:");
@@ -390,11 +390,11 @@ public class LightsOutView extends JFrame implements ActionListener
         {
             g.setColor(BOARD_COLOR);
             g.fillRect(0, 0, getWidth(), getHeight());
-            g.setColor(Color.red);
+            g.setColor(Color.gray);
             g.fillRect(BORDER, BORDER, getWidth() - 2 * BORDER, getHeight() - 2 * BORDER);
 
             // cyan square
-            g.setColor(Color.cyan);
+            g.setColor(Color.lightGray);
             g.fillRect(BORDER, BORDER, getWidth() - 4 * BORDER, getHeight() - 4 * BORDER);
             // regular color
             g.setColor(color);
